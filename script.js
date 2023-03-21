@@ -7,8 +7,9 @@ let getData = () => {
         fetch(url)
         .then((res) => res.json())
         .then((data) => {
+            const adviceData = data.slip.advice;
             id.innerText = data.slip.id;
-            advice.innerText = data.slip.advice;
+            advice.innerHTML = ` “${adviceData}” `;
         }); 
     } catch(err){
         console.log(err);
