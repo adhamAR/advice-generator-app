@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="card__header">ADVICE #<span class="id"></span></div>
+    <div class="card__content">
+      <p class="advice"></p>
+    </div>
+    <div class="card__footer">
+      <div class="divider">
+        <picture>
+          <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 31.25rem)">
+          <img src="images/pattern-divider-mobile.svg" alt="card divider for mobile">
+        </picture>
+      </div>
+      <button class="button" data-icon="dice"></button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Zubair Adham</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
